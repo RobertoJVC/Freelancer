@@ -36,7 +36,14 @@ body{
 .navegacion-principal{
     
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+    }
 }
 
 .navegacion-principal a{
@@ -50,4 +57,8 @@ body{
 .navegacion-principal a:hover{
     background-color: var(--primario);
     color: var(--oscuro);
+}
+
+@media (min-width: 480px) {
+    
 }
